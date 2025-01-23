@@ -1,0 +1,260 @@
+/* power by xkao */
+.shops {
+    padding: 20px;
+    border-radius: 1vh;
+}
+
+.shops-body {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    height: 100%;
+}
+
+.img-anim {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 1vh;
+}
+
+.img-anim img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.img-anim > div.bg {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.3);
+    transition: all 0.3s ease;
+}
+
+.img-anim > div.text {
+    position: absolute;
+    z-index: 3;
+    top: 120%;
+    left: 50%;
+    opacity: 0;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1.5px solid transparent;
+    border-image: linear-gradient(to right, var(--main), var(--main));
+    border-image-slice: 1;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.content {
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, .3);
+    transition: all .5s ease;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.shops-body > .shops-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    transition: all .5s ease;
+}
+
+.shops-body > .shops-img:hover {
+    transform: scale(1.035);
+}
+
+.shops-body > .shops-text-center {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.shops-body:hover > .shops-text-center {
+    left: 50%;
+    opacity: 1;
+    font-size: 20px;
+    padding: 0 20px;
+    border-radius: 2vh;
+}
+
+.img-anim:hover > img {
+    transform: scale(1.1);
+}
+
+.img-anim:hover > div {
+    opacity: 1;
+}
+
+.img-anim:hover > div.text {
+    top: 80%;
+    opacity: 1;
+}
+
+.btn-main {
+    color: var(--main);
+    background: var(--main-30);
+    border: 1px solid var(--main);
+    transition: all .5s ease;
+}
+
+.btn-main.active {
+    color: white;
+    background-color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.btn-main.active i {
+    color: white !important;
+}
+
+.btn-main:hover {
+    color: white;
+    background-color: var(--main);
+    border: 1px solid var(--main);
+}
+
+@media only screen and (max-width: 500px) {
+    .pd-sm-font {
+        font-size: 13px !important;
+    }
+    .pd-h-font {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .css-numc {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+
+    .css-card {
+        padding: 1rem;
+        min-height: 7rem;
+    }
+
+    .css-iconc {
+        right: 0.5rem;
+    }
+}
+
+.css-textc {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--font);
+}
+
+.css-numc {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.33;
+    color: var(--main);
+}
+
+.css-5rec9s {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.css-card {
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    min-height: 6rem;
+    color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.css-card:hover {
+    border: 2px solid var(--main);
+}
+
+.css-card * {
+    transition: inherit;
+}
+
+.css-iconc {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    opacity: 0.2;
+    color: var(--main);
+    top: 24px;
+    left: 65%;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+
+.css-card:hover .css-iconc {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+div .banner-show {
+    border-radius: 0.75rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bg-custombg{--tw-bg-opacity:1;background-color:var(--main)}
+.font-bold{font-weight:700}
+.font-semibold{font-weight:600}
+.font-semiboldx{font-weight:500}
+.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}
+.bg-navm{background-color:#e5e7eb}
+.offcanvas.show{max-width:80%!important}
+.btn-log{background-color:#1e1e1e;padding:0.2rem 0.5rem}
+.btn-log:hover{background-color:var(--main)}
+.btn-log-1{padding:0.2rem 0.5rem}@media only screen and (max-width: 600px){
+.btn-log{background-color:#1e1e1e;padding:0.2rem 0.5rem;margin-right:2.5rem;text-align:center}
+.btn-log:hover{background-color:var(--main)}
+.btn-log-1{padding:0.2rem 0.5rem;margin-right:2.5rem;text-align:center}}
+.font-medium{font-weight:500}
+.hover-main{color:var(--main)!important;border-radius:1vh}
+.hover-main{transition:0.5s!important}
+.hover-main.fa-regular{color:var(--main)!important}
+.hover-main.active{background-color:var(--main);color:#fff!important}
+.hover-main.active .fa-regular{color:#fff!important}
+.hover-main:hover{background-color:var(--main);color:#fff!important;border-radius:1vh}
+.icon-white{transition:0.5s!important}
+.hover-main:hover .icon-white{color:#ffff!important}
+.memu-main{color:var(--main)!important;border-radius:1vh;border: 1px solid var(--main);}
+.memu-main{transition:0.5s!important}
+.memu-main.fa-regular{color:var(--main)!important}
+.memu-main.active{background-color:var(--main);color:#fff!important}
+.memu-main.active .fa-regular{color:#fff!important}
+.memu-main:hover{background-color:var(--main);color:#fff!important;border-radius:1vh}
+.icon-white{transition:0.5s!important}
+.memu-main:hover .icon-white{color:#ffff!important}
+.input{display:flex;flex-direction:column;width:200px;justify-content:center;border-radius:10px;transition:1s;padding:10px;overflow:hidden}
+.value{font-size:15px;background-color:transparent;border:none;padding:10px;color:var(--main);display:flex;position:relative;gap:5px;cursor:pointer;border-radius:10px;transition:1s;box-sizing:border-box}
+.value:not(:active):hover,.value:focus{display:flex;box-sizing:border-box;border:2px solid var(--main);color:var(--main)}
+.value:focus,.value:active{background-color:var(--main);color:#fff;outline:none;margin-left:17px}
+.value::before{content:"";position:absolute;top:5px;left:-15px;width:5px;height:80%;background-color:#2f81f7;border-radius:5px;opacity:0;transition:1s}
+.value:focus::before,.value:active::before{opacity:1}
+.value svg{width:20px}
+.input:hover>:not(
+.value:hover){transition:300ms;filter:blur(1.5px);transform:scale(0.95,0.95)}
